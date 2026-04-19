@@ -25,7 +25,7 @@ export const navigationRoutes = [
     meta: { icon: 'mdi-content-save-plus-outline', title: 'CMS' }
   },
   {
-    path: '/settings',
+    path: '/ProjectSettings',
     name: 'Settings',
     meta: { icon: 'mdi-cog', title: 'Settings' }
   },
