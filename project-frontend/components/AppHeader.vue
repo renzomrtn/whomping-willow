@@ -1,10 +1,27 @@
 <template>
-    <div class="navbar">
-        <p>branding</p>
-        <p>breadcrumb</p>
-        <p>mode</p>
-        <p>account</p>
+  <div class="navbar">
+    <div class="left">
+      <div class="burger">
+        <i class="mdi mdi-menu"></i>
+      </div>
+      <div class="branding-container">
+        <img src="/logo.png" alt="Logo" class="logo" />
+        <div class="vertical-divider"></div>
+        <div class="branding-text-group">
+          <h3 class="main-title">YOUTH</h3>
+          <h6 class="sub-title">Project Management and Monitoring</h6> <!-- this could be a template -->
+        </div>
+      </div>
     </div>
+    <div class="right">
+      <i class="mdi mdi-moon-waning-crescent"></i> <!-- if else -->
+      <div class="profile-container">
+        <h4>Welcome Back,</h4>
+        <h3></h3> <!-- detect user -->
+      </div>
+      <i class="mdi mdi-chevron-down"></i> <!-- on click -->
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -16,8 +33,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px 16px 0;
+  padding: 16px 24px 16px 24px;
 }
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 
 .navbar-icon-container {
   width: 64px;
@@ -33,7 +57,7 @@
   gap: 10px;
 }
 
-.navbar-logo {
+.logo {
   height: 52px;
   width: auto;
 }
@@ -65,59 +89,5 @@
   margin: 0;
   color: #333;
   white-space: nowrap;
-}
-
-/* Breadcrumb Styles */
-.breadcrumb-container {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  margin-left: 40px;
-  gap: 4px;
-}
-
-.breadcrumb-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.breadcrumb-item {
-  margin: 0;
-  color: #757575; /* Grey for parent/inactive */
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.active-crumb {
-  color: #000; /* Black for current page */
-  font-weight: 600;
-}
-
-.breadcrumb-separator {
-  color: #bdbdbd;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.branding {
-    color: 000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.brand-image {
-    width: 3rem;
-}
-
-.vl {
-  border-left: 6px solid rgb(0, 0, 0);
-  height: 100%;
-  margin: 0 5px 0 5px;
 }
 </style>
