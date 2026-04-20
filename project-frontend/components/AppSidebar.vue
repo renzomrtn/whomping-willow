@@ -59,4 +59,8 @@ const isRouteActive = (navRoute) => {
   box-shadow: 0 4px 8px rgba(23, 68, 153, 0.15);
   font-weight: 700;
 }
+
+.sidebar-item--active:hover {
+  background: #447be2;
+}
 </style>

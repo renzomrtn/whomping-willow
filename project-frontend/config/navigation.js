@@ -25,6 +25,11 @@ export const navigationRoutes = [
     meta: { icon: 'mdi-content-save-plus-outline', title: 'CMS' }
   },
   {
+    path: '/ProjectCertgen',
+    name: 'CMS',
+    meta: { icon: 'mdi-certificate-outline', title: 'Generator' }
+  },
+  {
     path: '/ProjectSettings',
     name: 'Settings',
     meta: { icon: 'mdi-cog', title: 'Settings' }
